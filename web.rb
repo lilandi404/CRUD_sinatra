@@ -1,5 +1,6 @@
 require 'sinatra'
-require_relative 'db_connection'
+require_relative './model/item_model'
+require_relative './model/category_model'
 
 get '/' do
     item = get_all_items
